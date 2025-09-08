@@ -1,0 +1,102 @@
+package DTO;
+
+
+public class Pessoa {
+    private String nome;
+    private String sobreNome;
+    private String telefone;
+    private String CPF;
+    private String RG;
+
+    public Pessoa(String nome, String sobreNome, String telefone, String CPF, String RG, int idade, String email, String CEP) {
+        this.nome = nome;
+        this.sobreNome = sobreNome;
+        this.telefone = telefone;
+        this.CPF = CPF;
+        this.RG = RG;
+        this.idade = idade;
+        this.email = email;
+        this.CEP = CEP;
+    }
+    private int idade;
+    private String email;
+    private String CEP;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSobreNome() {
+        return sobreNome;
+    }
+
+    public void setSobreNome(String sobreNome) {
+        this.sobreNome = sobreNome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+
+    public String getRG() {
+        return RG;
+    }
+
+    public void setRG(String RG) {
+        this.RG = RG;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getCEP() {
+        return CEP;
+    }
+
+    public void setCEP(String CEP) {
+        this.CEP = CEP;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", sobreNome=" + sobreNome + ", telefone=" + telefone + ", CPF=" + CPF + ", RG=" + RG + ", idade=" + idade + ", email=" + email + ", CEP=" + CEP + '}';
+    }
+    
+    
+}
+//Classe TABELA
+ private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+   // Pessoa objtoPessoaDTO  = new Pessoa("Jorge", "Cardoso de Jesus", "97881983", "04631821035", "2109", 16, "jorginhocardosoJ@gmail.com", "021503");
+  // objtoPessoaDTO.toString();
+Pessoa objPessoa = new Pessoa(txtNome.getText(), TxtSobrenome.getText(), txttelefone.getText(), txtCPF.getText(), txtRG.getText(),Integer.parseInt(txtidade.getText()), txtEmail.getText(), txtCEP.getText());
+
+        System.out.println(objPessoa.toString());
