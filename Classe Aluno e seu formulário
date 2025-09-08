@@ -1,0 +1,96 @@
+package DTO;
+
+
+public class Aluno {
+    
+     private String Nome;
+    private String Sobrenome;
+    private String CPF;
+    private String RG;
+    private String Fone;
+    private int NMatricula;
+    private String curso;
+    private String responsalvel;
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    public String getSobrenome() {
+        return Sobrenome;
+    }
+
+    public void setSobrenome(String Sobrenome) {
+        this.Sobrenome = Sobrenome;
+    }
+
+    public String getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+
+    public String getRG() {
+        return RG;
+    }
+
+    public void setRG(String RG) {
+        this.RG = RG;
+    }
+
+    public String getFone() {
+        return Fone;
+    }
+
+    public void setFone(String Fone) {
+        this.Fone = Fone;
+    }
+
+    public int getNMatricula() {
+        return NMatricula;
+    }
+
+    public void setNMatricula(int NMatricula) {
+        this.NMatricula = NMatricula;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public String getResponsalvel() {
+        return responsalvel;
+    }
+
+    public void setResponsalvel(String responsalvel) {
+        this.responsalvel = responsalvel;
+    }
+
+    public Aluno(String Nome, String Sobrenome, String CPF, String RG, String Fone, int NMatricula, String curso, String responsalvel) {
+        this.Nome = Nome;
+        this.Sobrenome = Sobrenome;
+        this.CPF = CPF;
+        this.RG = RG;
+        this.Fone = Fone;
+        this.NMatricula = NMatricula;
+        this.curso = curso;
+        this.responsalvel = responsalvel;
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" + "Nome=" + Nome + ", Sobrenome=" + Sobrenome + ", CPF=" + CPF + ", RG=" + RG + ", Fone=" + Fone + ", NMatricula=" + NMatricula + ", curso=" + curso + ", responsalvel=" + responsalvel + '}';
+    }
+    
+    
+}
