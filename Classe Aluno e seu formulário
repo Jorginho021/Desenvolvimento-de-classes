@@ -89,9 +89,8 @@ public class Aluno {
     
 }
 
-//CLASSE TABELA
-private void bntSalvarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+//CODIGO TABELA 
+
+     private void bntSalvarActionPerformed(java.awt.event.ActionEvent evt) {                                          
        Aluno objAluno = new Aluno(txtNome.getText(), txtSobrenome.getText(), txtCPF.getText(), txtRG.getText(), txtTelefone.getText(), txtMatricula.getText(), txtCurso.getText(), txtResponsavel.getText());
         System.out.println(objAluno.toString);
-    }                                         
-
