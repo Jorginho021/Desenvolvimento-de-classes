@@ -1,31 +1,41 @@
 package DTO;
 
-
 public class Aluno {
     
-     private String Nome;
-    private String Sobrenome;
+        private String nome;
+    private String sobreNome;
+    private String telefone;
     private String CPF;
     private String RG;
-    private String Fone;
-    private int NMatricula;
-    private String curso;
-    private String responsalvel;
+    private String Curso;
+    public boolean toString;
+
+    public Aluno(String text, String text0, String text1, String text2, String text3, String text4, String text5, String text6) {
+          
+    }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
-    public void setNome(String Nome) {
-        this.Nome = Nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getSobrenome() {
-        return Sobrenome;
+    public String getSobreNome() {
+        return sobreNome;
     }
 
-    public void setSobrenome(String Sobrenome) {
-        this.Sobrenome = Sobrenome;
+    public void setSobreNome(String sobreNome) {
+        this.sobreNome = sobreNome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public String getCPF() {
@@ -44,53 +54,44 @@ public class Aluno {
         this.RG = RG;
     }
 
-    public String getFone() {
-        return Fone;
-    }
-
-    public void setFone(String Fone) {
-        this.Fone = Fone;
-    }
-
-    public int getNMatricula() {
-        return NMatricula;
-    }
-
-    public void setNMatricula(int NMatricula) {
-        this.NMatricula = NMatricula;
-    }
-
     public String getCurso() {
-        return curso;
+        return Curso;
     }
 
-    public void setCurso(String curso) {
-        this.curso = curso;
+    public void setCurso(String Curso) {
+        this.Curso = Curso;
     }
 
-    public String getResponsalvel() {
-        return responsalvel;
+    public boolean isToString() {
+        return toString;
     }
 
-    public void setResponsalvel(String responsalvel) {
-        this.responsalvel = responsalvel;
+    public void setToString(boolean toString) {
+        this.toString = toString;
     }
 
-    public Aluno(String Nome, String Sobrenome, String CPF, String RG, String Fone, int NMatricula, String curso, String responsalvel) {
-        this.Nome = Nome;
-        this.Sobrenome = Sobrenome;
+    public Aluno(String nome, String sobreNome, String telefone, String CPF, String RG, String Curso, boolean toString) {
+        this.nome = nome;
+        this.sobreNome = sobreNome;
+        this.telefone = telefone;
         this.CPF = CPF;
         this.RG = RG;
-        this.Fone = Fone;
-        this.NMatricula = NMatricula;
-        this.curso = curso;
-        this.responsalvel = responsalvel;
+        this.Curso = Curso;
+        this.toString = toString;
     }
 
     @Override
     public String toString() {
-        return "Aluno{" + "Nome=" + Nome + ", Sobrenome=" + Sobrenome + ", CPF=" + CPF + ", RG=" + RG + ", Fone=" + Fone + ", NMatricula=" + NMatricula + ", curso=" + curso + ", responsalvel=" + responsalvel + '}';
+        return "Aluno{" + "nome=" + nome + ", sobreNome=" + sobreNome + ", telefone=" + telefone + ", CPF=" + CPF + ", RG=" + RG + ", Curso=" + Curso + ", toString=" + toString + '}';
     }
-    
+
+ 
     
 }
+
+//CLASSE TABELA
+private void bntSalvarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+       Aluno objAluno = new Aluno(txtNome.getText(), txtSobrenome.getText(), txtCPF.getText(), txtRG.getText(), txtTelefone.getText(), txtMatricula.getText(), txtCurso.getText(), txtResponsavel.getText());
+        System.out.println(objAluno.toString);
+    }                                         
+
