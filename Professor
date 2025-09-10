@@ -1,0 +1,2 @@
+Professor objProfessor = new Professor(txtNome.getText(), txtSobrenome.getText(), txtCPF.getText(), txtRG.getText(),txtTelefone.getText(), Integer.parseInt(txtNMatricula.getText()), txtCurso.getText());
+        System.out.println(objProfessor.toString());
